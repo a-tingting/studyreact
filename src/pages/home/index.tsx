@@ -11,6 +11,9 @@ export default function index() {
             <div>
                 <Link to="/react02">react02</Link>
             </div>
+            <div>
+                <Link to="/react03">react03</Link>
+            </div>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from '../pages/home/index'
 import React01 from '../pages/react01/index'
 import React02 from '../pages/react02/index'
+import React03 from '../pages/react03/index'
 
 function App() {
     return (
@@ -12,11 +13,12 @@ function App() {
                     首页
                 </Route>
                 <Route path="react01" element={<React01 />}>
-                    个人中心
+                    React01
                 </Route>
                 <Route path="react02" element={<React02 />}>
-                    登录页
+                    React02
                 </Route>
+                <Route path="react03" element={<React03 />}></Route>
             </Routes>
         </div>
     )

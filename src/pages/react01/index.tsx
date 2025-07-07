@@ -1,18 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Child01 from '../components/child01'
-import Child02 from '../components/child02'
 
 export default function index() {
-    const changeName = (name: string) => {
-        console.log(name)
+    const [name, setName] = useState('张三')
+    const [age, setAge] = useState(18)
+    const changeInfo = () => {
+        setName('李四')
+        setAge(20)
     }
     return (
         <div>
             <h1>react01</h1>
-            <Child01 name="张三" age={18} onChangeName={changeName}>
-                <div>123</div>
+            <Child01 name={name} age={age}>
+                <div>name:{name}</div>
+                <div>age:{age}</div>
             </Child01>
-            <Child02 />
+            <button
+                onClick={() => {
+                    changeInfo()
+                }}
+            >
+                点击
+            </button>
         </div>
     )
 }
