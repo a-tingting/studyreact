@@ -1,0 +1,11 @@
+.box1 {
+    width: 20%;
+    padding-top: 20%; /* 与 width 相同 */
+    background: red;
+}
+.box2 {
+    /* width: 100px; */
+    height: 100px;
+    aspect-ratio: 16/9;
+    background: blue;
+}
